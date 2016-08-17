@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "sourceMap": false
+    },
+    "files": [
+        "index.ts"
+    ],
+	"exclude": [
+        "components",
+        "css",
+		"dist",
+		"js",
+		"typings",
+		"utils"
+    ]
+}

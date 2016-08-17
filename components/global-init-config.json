@@ -1,0 +1,27 @@
+{
+	"resources_common" :"components",
+	"splash_screen" :{
+		"name":"splash.html",
+		"component":"components",
+		"width":600,
+		"height":400,
+		"backgroundcolor":"",
+		"isFramerequired":false,
+		"isDevToolsRequired":false,
+		"isdarkTheme":true,
+		"timeout":2000
+	},
+	"main_window" :{
+		"name":"index.html",
+		"component":"components",
+		"width":600,
+		"height":400,
+		"parent":"splashWindow",
+		"isModal":true,
+		"isVisible":false,
+		"backgroundcolor":"",
+		"isFramerequired":false,
+		"isDevToolsRequired":true,
+		"isdarkTheme":true 
+	}
+}
