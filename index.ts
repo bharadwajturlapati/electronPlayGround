@@ -26,7 +26,7 @@ function createWindow(){
   setTimeout(function(){createActualWindow(globalsjson)},globalsjson.splash_screen.timeout);
 }
 
-function createActualWindow(globalsjson){
+function createActualWindow(globalsjson:any){
   let childWindow = new browserWindow({
     parent:globalsjson.main_window.parent,
     modal:globalsjson.main_window.isModal,
