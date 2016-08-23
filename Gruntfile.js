@@ -22,16 +22,27 @@ module.exports = function(grunt) {
 			sourceMap: false
 		}
       }
-    }
+    },
+	less:{
+		development: {
+			options: {
+			  paths: ['./less/']
+			},
+			files: {
+			  './less/rootcss.css': './less/rootcss.less'
+			}
+		}
+	}
   });
 
   // Load the plugin that provides the "defined tasks [grunt-contrib-copy,grunt-ts]" task.
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks("grunt-ts");
 
   // Default task(s).
-  //grunt.registerTask('default', ['ts','copy','clean']);// use this for release
-  grunt.registerTask('default', ['ts']);
+  //grunt.registerTask('default', ['ts','copy','clean']);// use this for release from command line with options as buildType="release"
+  grunt.registerTask('default', ['ts','less']);
 
 };
