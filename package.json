@@ -4,7 +4,7 @@
   "description": "A minimal Electron application",
   "main": "index.js",
   "scripts": {
-    "start": "Grunt & electron ."
+    "start": "electron ."
   },
   "keywords": [
     "Electron",
@@ -23,12 +23,9 @@
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-less": "^1.4.0",
-    "grunt-ts": "^6.0.0-beta.3",
-    "typescript": "^1.8.10",
-    "typings": "^1.3.2"
+    "grunt-contrib-less": "^1.4.0"
   },
-  "globalinstall": {
+  "globalinstallOld": {
     "installWithAdministrator": [
       "less",
       "typescript",
