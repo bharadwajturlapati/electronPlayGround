@@ -1,0 +1,9 @@
+//covers all the mappings to the respective files for resources to be loaded.
+/*
+    camel case : fileToRead is exposed variable
+    small case : filetoread is usage internal variables.
+    class case : upper camelcase ReadJson as exposed outside. 
+    method case : camel case readFileJson.
+*/
+{
+}
