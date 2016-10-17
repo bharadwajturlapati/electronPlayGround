@@ -1,6 +1,4 @@
-/// <reference path="typings/node/node.d.ts" />
-"use strict";
-var jsonFileUtils = require("./js/com/apptromix/utils/JsonFileUtils");
+var jsonFileUtils = require("./js/utils/JsonFileUtils");
 var electron = require('electron');
 var app = electron.app;
 var browserWindow = electron.BrowserWindow;
@@ -15,7 +13,7 @@ function createWindow() {
         frame: globalsjson.splash_screen.isFramerequired,
         darkTheme: globalsjson.splash_screen.isdarkTheme
     });
-    splashWindow.loadURL('file://' + __dirname + '/' + globalsjson.splash_screen.component + '/' + globalsjson.splash_screen.name);
+    splashWindow.loadURL('file://' + __dirname + '/' + globalsjson.splash_screen.name);
     if (globalsjson.splash_screen.isDevToolsRequired) {
         splashWindow.webContents.openDevTools();
     }
@@ -31,7 +29,7 @@ function createActualWindow(globalsjson) {
         show: globalsjson.main_window.isVisible,
         darkTheme: globalsjson.main_window.isdarkTheme
     });
-    childWindow.loadURL('file://' + __dirname + '/' + globalsjson.main_window.component + '/' + globalsjson.main_window.name);
+    childWindow.loadURL('file://' + __dirname + '/' + globalsjson.main_window.name);
     childWindow.once('ready-to-show', function () {
         childWindow.show();
         splashWindow.close();
