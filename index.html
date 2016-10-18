@@ -4,10 +4,12 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/rootcss.css"/>
 	<head>
+		<!-- Insert this line above script imports  -->
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 		<script src = "js/tparty/jquery-3.1.1.min.js" type="text/javascript"></script>
-		<!--<script src = "js/tparty/angular.js"></script>-->
-		<!--<script src = "js/tparty/jquery.layout.js"></script>-->
-		<!--<script src = "js/ui/layout.js"></script>-->
+		<script src = "js/tparty/angular.js"></script>
+		<!-- Insert this line after script imports -->
+		<script>if (window.module) module = window.module;</script>
 	</head>
 	<body class="rtpdark">
 		<div class="ui-layout-center">Center</div>

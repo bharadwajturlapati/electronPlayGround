@@ -33,5 +33,8 @@
       "node",
       "npm"
     ]
+  },
+  "dependencies": {
+    "angular-ui-layout": "^1.4.2"
   }
 }
